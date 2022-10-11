@@ -4,7 +4,6 @@
 # - Для n=4 [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
-
-
-
-
+n = int(input('Введите n: '))
+lst = [round((1+1/i)**i, 2) for i in range(1, n+1)]
+print(f'Для n={n} {lst} \nСумма: {round(sum(lst), 2)}')
