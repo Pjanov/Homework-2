@@ -8,5 +8,12 @@
 # Примечание: Программа должна работать для любого количества цифр в числе.
 
 
+num = input('Введи вещественное число: ')
 
+spisok = list(str(num).split(','))
+res = 0
+for i in spisok:
+    for j in i:
+        res += int(j)
+print(f'{num} -> {res}')
 
